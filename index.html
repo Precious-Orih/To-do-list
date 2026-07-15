@@ -2,12 +2,19 @@
 <html lang="en">
 <head>
     <title>To-do List</title>
+    <style>
+        .deleteBtn{
+            background-color: red;
+        }
+       
+    </style>
 </head>
 <body>
     <h2>Practice</h2>
-    <input id="input" type="text" placeholder="type in your task">
+    <input id="taskTitle" type="text" placeholder="type in your task">
+    <input id="taskDate" type="date">
     <button id="add">Add</button>
     <ul id="taskList"></ul>
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
 </body>
 </html>
