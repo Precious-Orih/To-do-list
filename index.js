@@ -9,9 +9,9 @@ const inputDate = document.getElementById('inputDate');
 const inputTime = document.getElementById('inputTime');
 
 const clear = document.getElementById('clear').onclick = () => { clearInput(); };
-const add = document.getElementById('add').onclick = () => { verify(); };
+const add = document.getElementById('add').onclick = () => { checkValidity(); };
 const enterInput = inputTitle.onkeydown = (event) => {
-    if (event.key === "Enter") { verify(); }
+    if (event.key === "Enter") { checkValidity(); }
 };
 
 function displayTask() {
