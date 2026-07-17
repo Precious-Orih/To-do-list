@@ -2,22 +2,36 @@
 <html lang="en">
 <head>
     <title>To-do List</title>
-    <style>
-        .deleteBtn{
-            background-color: red;
-        }
-       
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Quicksand:wght@300..700&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
 </head>
 <body>
-    <h1>To-do List</h1>
-    <h2 id="todaysDate">Today is:</h2>
-    <input id="inputTitle" type="text" placeholder="type in your task">
-    <input id="inputDate" type="date">
-    <input id="inputTime" type="time">
-    <button id="add">Add</button>
-    <button id="clear">Clear</button>
-    <ul id="taskList"></ul>
+    <div class="mainContainer">
+        <div class="header">
+            <h1>To-do List</h1>
+            <h2 id="todaysDate">Today is:</h2>
+        </div>
+        <div class="functional">
+            <div class="inputs">
+                <input id="inputTitle" type="text" placeholder="Type in your task...">
+                <div class="inputDate"><input id="inputDate" type="date"></div>
+                <div class="inputTime"><input id="inputTime" type="time"></div>
+                <button id="add">Add</button>
+                 
+            </div>
+            <div id="tasks" class="background">
+                <ul id="taskList"></ul>
+            </div>
+        </div> 
+    </div>
+    <!-- <button id="clear">Clear</button> -->
     <script src="index.js" defer></script>
 </body>
 </html>
